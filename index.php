@@ -3,7 +3,10 @@
 require 'config.php';
 require 'util/Auth.php';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 function __autoload($class) {
     require LIBS . $class .".php";
 }
@@ -19,4 +22,8 @@ $bootstrap = new Bootstrap();
 //$bootstrap->setDefaultFile();
 //$bootstrap->setErrorFile();
 
+<<<<<<< HEAD
 $bootstrap->init();
+=======
+$bootstrap->init();
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0

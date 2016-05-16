@@ -6,7 +6,10 @@ class Dashboard extends Controller {
 
         parent::__construct();
         Auth::handleLogin();
+<<<<<<< HEAD
         Auth::handleAuth(array('admin', 'watchlist')) ;
+=======
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
         $this->view->js = array("dashboard/js/dashboard.js");
 
     }

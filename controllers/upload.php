@@ -8,7 +8,10 @@ class Upload extends Controller {
 
         parent::__construct();
         Auth::handleLogin();
+<<<<<<< HEAD
         Auth::handleAuth(array('admin', 'watchlist')) ; 
+=======
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
         $this->view->js = array("upload/js/jquery.form.min.js",
         "upload/js/upload.js");
 
@@ -71,6 +74,7 @@ class Upload extends Controller {
 	
                 $File_Name          = strtolower($_FILES['FileInput']['name'][$i]);
                 $File_Ext           = substr($File_Name, strrpos($File_Name, '.')); 
+<<<<<<< HEAD
 
 
                 $type = '' ;
@@ -103,11 +107,22 @@ class Upload extends Controller {
 	
                 $lastID = $this->model->uploadImg( $NewFileName, $File_Ext) ;
                 $NewFileName = $UploadDirectory.$lastID.'_'.$NewFileName.$File_Ext;
+=======
+                $NewFileName 		= $_POST['firstname']."_".$_POST['lastname']
+                    ."_".$_POST['type']."_".date("y_m_d_h_i_s"); //new file name
+	
+                $lastID = $this->model->uploadImg($UploadDirectory.$NewFileName, $File_Ext) ;
+                $NewFileName = $UploadDirectory.$NewFileName."_".$lastID.$File_Ext;
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 
                 if( move_uploaded_file($_FILES['FileInput']['tmp_name'][$i], $NewFileName )) {
                                     
                     chmod($NewFileName, 0777) ;
+<<<<<<< HEAD
                     echo substr($NewFileName, 5).' Upload Successfully. <br/>' ;
+=======
+                    echo $NewFileName.'=> Uploaded.<br/>' ;
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
                 }else{
                     $msg .= 'Error uploading File '.$_FILES["FileInput"]["name"][$i].'!<br />' ;
                 }
@@ -123,4 +138,8 @@ class Upload extends Controller {
 
         $this->model->getProfile() ;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0

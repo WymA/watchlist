@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 <div class="l-content">
@@ -22,3 +23,9 @@
 </div> <!-- end l-content -->
 
 
+=======
+<div class="l-content" align="cneter">
+
+     <p><?php echo $this->msg; ?></p>
+</div>
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0

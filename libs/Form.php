@@ -7,6 +7,10 @@
  *  - Validate
  *  - Return Data
  *  - Write to Database
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
  */
 
 require 'Form/Val.php';

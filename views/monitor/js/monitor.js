@@ -1,6 +1,7 @@
 $(function(){
 
 
+<<<<<<< HEAD
     var times = 0 ;
 
     var panelHtml = '<div id="panel-_panelID-div" class="panel panel-primary profile-panel">'+
@@ -358,3 +359,34 @@ $(function(){
 
 });
 
+=======
+    ///
+    /// Handle Server-side Events
+    ///
+    if(typeof(EventSource) !== "undefined") {
+
+	var source = new EventSource("./update");
+	source.onmessage = function(event) {
+
+            $("#result").append( event.data + "<br>") ;
+
+	    $("#update-msg").modal("show");
+	}
+    } else {
+
+	$("#result").html( "Sorry, your browser needs to update to support this feature." ); 
+    }
+
+    $('#update-msg').on('show.bs.modal', function(e) {
+
+	$("#modal-msg").append( "<p>"+event.data+"</p>") ;
+    });
+
+    setTimeout(function(){
+	$('#update-msg').modal('hide')
+    }, 5000);
+
+
+
+});
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0

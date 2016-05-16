@@ -4,8 +4,13 @@
 class Auth
 {
     
+<<<<<<< HEAD
     public static function handleLogin(){
 
+=======
+    public static function handleLogin()
+    {
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
         @session_start();
         $logged = $_SESSION['username'];
         if ($logged == "") {
@@ -14,6 +19,7 @@ class Auth
             exit;
         }
     }
+<<<<<<< HEAD
 
     public static function handleAuth( $required ){
 
@@ -28,5 +34,7 @@ class Auth
 
         header('location: '. URL .'error/noPermission');
     }
+=======
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
     
 }

@@ -1,5 +1,6 @@
 $(function(){
 
+<<<<<<< HEAD
 	function validateUsername( username ){
 
 	    var msg = [] ;
@@ -75,6 +76,10 @@ $(function(){
 
 
 
+=======
+    $("#login").click(function(){
+
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 	var username = $.trim($("#username").val());
 	var password = $.trim($("#password").val());
 
@@ -87,8 +92,26 @@ $(function(){
 	    cache: false,
 	    beforeSend: function(){ 
 
+<<<<<<< HEAD
 		$("#login").attr('data-i18n', 'button.connecting');
 
+=======
+		$("#login").val('Connecting...');
+
+		// var vUsername = validateUsername(username);
+		// var vPassword = validatePassword(password);
+
+		// if ( false == vUsername[0] ){
+
+		//     $("#error").html('<span style="color:#cc0000">'+vUsername[1]+'</span>');
+		//     return false ;
+
+		// }else if ( false == vPassword[0] ){
+
+		//     $("#error").html('<span style="color:#cc0000">'+vPassword[1]+'</span>');
+		//     return false ;
+		// }
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 	    },
 	    success: function(data){
 
@@ -99,6 +122,7 @@ $(function(){
 
 		}else{
 		    
+<<<<<<< HEAD
 		    $("#login").attr('data-i18n', 'button.sign-in');
 		    $("#error").html('<span style="color:#cc0000">'+data.msg+'</span>');
 		    $("#login-msg").html('<span style="color:#cc0000">'+data.msg+'</span>') ;
@@ -107,6 +131,14 @@ $(function(){
 	    error: function(o){
 		
 		console.log(o) ;
+=======
+		    $("#login").val('Sign in')
+		    $("#error").html('<span style="color:#cc0000">'+data.msg+'</span>');
+		}
+	    },
+	    error: function(o){
+
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 	    }
 
 	});
@@ -120,6 +152,7 @@ $(function(){
     $("#register").click(function(){
 
 
+<<<<<<< HEAD
 	var username = $.trim( $("#reg-username").val() ) ;
 	var password = $.trim( $("#reg-password").val() ) ;
 	var repass = $.trim( $("#re-password").val() ) ;
@@ -139,6 +172,10 @@ $(function(){
 	    return false ;
 	}
 
+=======
+	var password=$("#reg-password").val();
+	var repass=$("#re-password").val();
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 	
 	var occupation = $("#occupation").val() ;
 	if ( occupation == "" ){
@@ -146,11 +183,17 @@ $(function(){
 	    $("#reg-error").html('<span style="color:#cc0000">You have to choose an occupation</span>');	    
 	    return false ;
 	}
+<<<<<<< HEAD
 
 	//alert ( $('form[name="registerForm"]').serialize() ) ;
 	
 
 	if( password == repass ){
+=======
+	
+
+	if( $.trim(password) == $.trim(repass) ){
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 
 	    $.ajax({
 
@@ -166,18 +209,27 @@ $(function(){
 
 
 			$("#reg-error").html('<span style="color:#cc0000">'+data.msg+'</span>');
+<<<<<<< HEAD
 			$("#login-msg").html('<span style="color:#cc0000">'+data.msg+'</span>') ;
+=======
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 			$("#register").fadeOut() ;
 
 		    }else{
 			
 			$("#register").val('Sign Up')
 			$("#reg-error").html('<span style="color:#cc0000">'+data.msg+'</span>');
+<<<<<<< HEAD
 			$("#login-msg").html('<span style="color:#cc0000">'+data.msg+'</span>') ;
 		    }
 		},
 		error: function(data){
 
+=======
+		    }
+		},
+		error: function(data){
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 		    $("#register").val('Sign Up') ;
 		    $("#cancel").trigger("click") ;
 		}
@@ -186,6 +238,7 @@ $(function(){
 
 	}else{
 	    
+<<<<<<< HEAD
 	    $("#reg-error").html('<span style="color:#cc0000">Two input passwords are not the same</span>');
 	}
 	return false;
@@ -224,4 +277,13 @@ $(function(){
 
     
     
+=======
+	    $("#reg-error").html('<span style="color:#cc0000">Not the same</span>');
+	}
+	return false;
+    });
+    
+
+
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
 }) ;

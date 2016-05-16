@@ -2,10 +2,15 @@
 
 class Monitor extends Controller {
 
+<<<<<<< HEAD
 
     function __construct() {
 
 	@session_start() ;
+=======
+    function __construct() {
+
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
         parent::__construct();
         $this->view->js = array("monitor/js/monitor.js");
 
@@ -19,6 +24,7 @@ class Monitor extends Controller {
 
     }
 
+<<<<<<< HEAD
     function getChecking(){
 
 	$this->model->getChecking() ;
@@ -49,3 +55,17 @@ class Monitor extends Controller {
     }
 
 }
+=======
+    function update(){
+
+        header('Content-Type: text/event-stream');
+        header('Cache-Control: no-cache');
+
+        $time = date('r');
+        echo "data: The server time is: {$time}\n\n";
+        flush();
+    }
+    
+
+}
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0

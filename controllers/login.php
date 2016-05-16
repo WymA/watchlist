@@ -16,6 +16,7 @@ class Login extends Controller {
         $this->view->render('login/index');
         $this->view->render('footer');
     }
+<<<<<<< HEAD
 
     function resetPage(){
 
@@ -23,6 +24,8 @@ class Login extends Controller {
         $this->view->render('login/reset') ;
         $this->view->render('footer') ;
     }
+=======
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
     
     function run() {
         
@@ -42,7 +45,11 @@ class Login extends Controller {
         $this->view->msg = $res['msg'] ;
 
         $this->view->render('home/index') ;
+<<<<<<< HEAD
 	
+=======
+ 
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
         $this->view->render('footer') ;
     }
 
@@ -52,4 +59,19 @@ class Login extends Controller {
     }
     
 
+<<<<<<< HEAD
 }
+=======
+    /* function approveForget(){ */
+
+    /*     if ( isset($_GET['username']) ){ */
+
+
+    /*     }else{ */
+
+    /*     } */
+    /* } */
+
+
+}
+>>>>>>> 2005baf0843eb78e681740de250e57fa5cc79fa0
