@@ -1,0 +1,73 @@
+{
+
+    "link":{
+	"home": "Home",
+	"dashboard": "Dashboard",
+	"upload": "Upload",
+	"monitor": "Monitor",
+	"contact": "Contact",
+	"logout": "Log out",
+	"admin": "Admin"
+    },
+
+    "user": {
+	"welcome": "Welcome",
+	"username": "Username",
+	"password": "Password",
+	"repassword": "Repeat Password",
+	"email": "E-Mail",
+	"find-password": "Find Your Password",
+	"firstname" : "First Name",
+	"lastname" : "Last Name",
+	"age" : "Age",
+	"gender": "Gender",
+	"male": "Male",
+	"female": "Female",
+	"description": "Description",
+	"check": "check"
+    },
+
+    "upload":{
+    	"input-header": "Input the Suspect Information",
+    	"next-step": "Next Step",
+    	"add-pic": "Add Pictures",
+    	"previous-step": "Previous Step",
+    	"create-new": "Create New Profile",
+    	"confirm-add": "Confirm to Add",
+    	"confirm-create": "Confirm to Create",
+    	"confirm-header": "Confirm to Create?",
+    	"fimilar-suspect": "Familiar Suspects Information",
+    	"choose-type": "Choose an Image Type:",
+    	"information-header": "Image Files Upload",
+    	"upload": "Upload"
+	},	
+
+    "button":{
+	"cancel": "Cancel",
+	"submit": "Submit",
+	"connecting": "Connecting...",
+	"all-suspects": "All Suspects",
+	"search": "Search",
+	"delete": "Delete",
+	"view": "View",
+	"close": "Close",
+	"close-panel": "Close the Panel",
+	"check": "Check",
+	"ignore": "Ignore",
+	"sign-in": "Sign In",
+	"sign-up": "Sign Up",
+	"forget-password": "Forget password",
+	"select-role": "Select Your Occupation",
+	"watchlist": "Watch List Officer",
+	"passport": "Passport Officer",
+	"reset": "Reset"
+    },
+
+
+    "page":{
+    	"admin-header": "Change the Admin E-mail address",
+    	"new-email": "New Admin Email",
+    	"admin-password": "Admin Password"
+    }
+
+}
